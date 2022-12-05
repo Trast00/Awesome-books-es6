@@ -27,10 +27,11 @@ export default class ListBooks {
     pTitleAuthor.textContent = `"${title}" by ${author}`;
   
     const btnRemove = document.createElement('button');
+    btnRemove.classList.add('buttons')
     btnRemove.textContent = 'Remove';
   
     btnRemove.addEventListener('click', () => {
-      listBook.delete(itemId);
+      this.delete(itemId);
     });
   
     li.append(pTitleAuthor, btnRemove);

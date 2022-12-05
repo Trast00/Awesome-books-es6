@@ -11,6 +11,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  --color-transparent-gray: #d3d3d3;
 }
 
 section {
@@ -24,13 +26,22 @@ section {
   display: none;
 }
 
+.buttons {
+  height: 30px;
+  width: 70px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
 /*  ******************************************** */
 /*  ****************** Header ****************** */
 header {
   width: 90%;
   margin-top: 12px;
   margin-bottom: 10px;
-  border: 2px solid black;
 }
 
 nav {
@@ -58,12 +69,14 @@ nav h1 {
 }
 
 .nav-list li:nth-child(2) {
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid var(--color-transparent-gray);
+  border-right: 1px solid var(--color-transparent-gray);
 }
 
 .nav-list li:hover {
-  color: blue;
+  color: rgb(85, 85, 248);
+  text-decoration: underline;
+  font-weight: 500;
 }
 
 #dateTime {
@@ -77,8 +90,8 @@ nav h1 {
 .list-book {
   width: 100%;
   min-height: 60px;
-  border: 5px solid #000;
-  padding: 0;
+  border-radius: 8px;
+  border: 1px solid var(--color-transparent-gray);
 }
 
 .list-book li {
@@ -88,7 +101,15 @@ nav h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12px 0 12px;
+  padding: 12px 12px 12px 12px;
+}
+
+.list-book li:nth-child(odd) {
+  background-color: #dddd;
+}
+
+.list-book li button {
+  background-color: rgb(239, 58, 58);
 }
 
 /*  ******************************************************* */
@@ -103,29 +124,50 @@ form {
 #Title,
 #Author {
   width: 14.6rem;
+  min-width: 250px;
+  border-radius: 4px;
+  border: 1px solid var(--color-transparent-gray);
+  padding: 8px 16px 8px 12px;
 }
 
-form button {
-  width: 60px;
+form input[type="submit"] {
+  background-color: rgb(85, 85, 248);
+}
+
+form input[type="submit"]:hover {
+  background-color: rgb(106, 106, 241);
 }
 
 hr {
-  width: 50px;
-  border: 1px solid black;
+  width: 80px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: var(--color-transparent-gray);
+  border: none;
+  margin-bottom: 50px;
 }
 
 h2 {
   text-align: center;
   width: 100%;
+  margin-bottom: 24px;
 }
 
-.list-book li:nth-child(odd) {
-  background-color: #dddd;
+/*  ****************************************************** */
+/*  ****************** Contact Section ****************** */
+#contact ul {
+  margin-top: 12px;
+  text-decoration: none;
+  list-style: none;
 }
 
-.list-book li button {
-  height: 30px;
+#contact ul li {
+  margin-top: 5px;
 }
+
+
+/*  ***************************************************** */
+/*  ****************** Footer Section ****************** */
 
 footer {
   box-sizing: border-box;
@@ -134,5 +176,4 @@ footer {
   width: 90%;
   display: flex;
   padding: 12px 32px 12px 32px;
-  border: 2px solid #000;
 }
