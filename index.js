@@ -1,9 +1,8 @@
-import luxon from './modules/luxon.js';
+import { DateTime } from 'https://cdn.jsdelivr.net/npm/luxon@3.1.1/src/luxon.js';
 import ListBooks from './modules/ListBook.js';
 
-// var DateTime = luxon.DateTime;
 const pDateTime = document.getElementById('dateTime');
-pDateTime.textContent = `Date and Time: ${luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_MED)}`;
+pDateTime.textContent = `Date and Time: ${DateTime.now().toLocaleString(DateTime.DATETIME_MED)}`;
 
 const listBook = new ListBooks();
 
