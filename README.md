@@ -19,7 +19,20 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+**!Require luxon to display the date!**
 - [Live Demo Link](https://trast00.github.io/Awesome-books-es6/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Install
+
+Install this project with:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
+  npm install --save luxon
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
