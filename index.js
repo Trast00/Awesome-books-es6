@@ -1,4 +1,4 @@
-import { DateTime } from 'https://cdn.jsdelivr.net/npm/luxon@3.1.1/src/luxon.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 import ListBooks from './modules/ListBook.js';
 
 const pDateTime = document.getElementById('dateTime');
