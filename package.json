@@ -1,0 +1,20 @@
+{
+  "name": "awesome-books-es6",
+  "version": "1.0.0",
+  "description": "This a project done for the activity \"Awesome books ES6\" of the Microverse Program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trast00/Awesome-books-es6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trast00/Awesome-books-es6/issues"
+  },
+  "homepage": "https://github.com/Trast00/Awesome-books-es6#readme"
+}
