@@ -23,6 +23,7 @@ export default class ListBooks {
     const listBooks = document.querySelector('.list-book');
     const li = document.createElement('li');
     li.id = itemId;
+    li.classList.add('book')
     const pTitleAuthor = document.createElement('p');
     pTitleAuthor.textContent = `"${title}" by ${author}`;
   
