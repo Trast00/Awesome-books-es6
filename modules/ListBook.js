@@ -1,4 +1,4 @@
-import Book from "./Book.js";
+import Book from './Book.js';
 
 export default class ListBooks {
   constructor() {
@@ -19,24 +19,24 @@ export default class ListBooks {
 
   displayBook(title, author) {
     const itemId = this.currendID;
-  
+
     const listBooks = document.querySelector('.list-book');
     const li = document.createElement('li');
     li.id = itemId;
-    li.classList.add('book')
+    li.classList.add('book');
     const pTitleAuthor = document.createElement('p');
     pTitleAuthor.textContent = `"${title}" by ${author}`;
-  
+
     const btnRemove = document.createElement('button');
-    btnRemove.classList.add('buttons')
+    btnRemove.classList.add('buttons');
     btnRemove.textContent = 'Remove';
-  
+
     btnRemove.addEventListener('click', () => {
       this.delete(itemId);
     });
-  
+
     li.append(pTitleAuthor, btnRemove);
-  
+
     listBooks.append(li);
     this.currendID += 1;
   }

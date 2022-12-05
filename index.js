@@ -1,14 +1,14 @@
-import luxon from "./modules/luxon.js";
-import ListBooks from "./modules/ListBook.js";
+import luxon from './modules/luxon.js';
+import ListBooks from './modules/ListBook.js';
 
-//var DateTime = luxon.DateTime;
-const pDateTime = document.getElementById('dateTime')
-pDateTime.textContent =  `Date and Time: ${luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_MED) }`
+// var DateTime = luxon.DateTime;
+const pDateTime = document.getElementById('dateTime');
+pDateTime.textContent = `Date and Time: ${luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_MED)}`;
 
-const listBook = new ListBooks()
+const listBook = new ListBooks();
 
-const form = document.getElementById('addNewBook')
-const [title, author, btnAddBook] = form.elements
+const form = document.getElementById('addNewBook');
+const [title, author, btnAddBook] = form.elements;
 btnAddBook.addEventListener('click', (event) => {
   const error = document.getElementById('error');
   if (title.value.length === 0 || author.value.length === 0) {
