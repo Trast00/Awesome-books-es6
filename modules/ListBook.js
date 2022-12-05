@@ -6,18 +6,18 @@ export default class ListBooks {
     this.currendID = 0;
   }
 
-  add(title, author) {
+  add = (title, author) => {
     const book = new Book(this.currendID, title, author);
     this.books.push(book);
     this.displayBook(title, author);
   }
 
-  delete(id) {
+  delete = (id) => {
     document.getElementById(id).remove();
     this.books = this.books.filter((book) => book.id !== id);
   }
 
-  displayBook(title, author) {
+  displayBook = (title, author) => {
     const itemId = this.currendID;
 
     const listBooks = document.querySelector('.list-book');
