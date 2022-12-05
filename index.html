@@ -6,11 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/a1c06e2fcd.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="index.css">
+  <script src="./modules/luxon.js" type="module"></script>
+  <script src="./modules/Book.js" type="module"></script>
+  <script src="./modules/ListBook.js" type="module"></script>
+  <script src="navbar.js" defer></script>
+  <script src="index.js" type="module" defer></script>
   <title>Awesome Books ES6</title>
 </head>
 <body>
-
   <header>
     <nav>
       <h1>Awesome Books ES6</h1>
@@ -20,8 +24,9 @@
         <li id="nav-contact">Contact</li>
       </ul>
     </nav>
+    
 </header>
-
+<p id="dateTime">Date et time</p>
 <section id="list-book">
   <h2>All Awesome Books</h2>
   <ul class="list-book">
@@ -30,12 +35,12 @@
 
 <section id="new-book" class="hidden">
   <hr>
-  <form class="form">
+  <form id="addNewBook" class="form">
       <h2>Add a new book</h2>
       <input type="text" name="Title" placeholder="Title" id="Title"> 
       <input type="text" name="Author" placeholder="Author" id="Author">
       <p class="hidden" id="error">Title and Author should not be empty</p>
-      <input type="submit" value="Add" id="button">
+      <input type="submit" value="Add" name="addBook" id="addBook">
   </form>
 </section>
 
